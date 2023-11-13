@@ -14,3 +14,16 @@ person.getName()
 
 console.dir(text);
 
+// JavaScript Object Accessors
+
+const newPerson = {
+    firstName: "John",
+    lastName: "Doe",
+    language: "",
+    set lang(option) {
+        this.language = option;
+    }
+};
+
+newPerson.lang = 'BN'
+console.log(newPerson);
