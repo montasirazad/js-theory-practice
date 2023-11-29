@@ -1,12 +1,12 @@
 // Function expression
 
 const x = function sleep() {
-    console.log(arguments);
+    //console.log(arguments);
 }
 
 //sleep()
 
-console.log(x(1, 123, 500, 115, 44, 88));
+//console.log(x(1, 123, 500, 115, 44, 88));
 
 
 // function hoisting
@@ -26,3 +26,14 @@ function myFunction(a, b) {
     return a * b;
 }
 
+function test(a) {
+
+    a = a++
+    console.log('a', a);
+    //console.log(++a == a++);
+    a = ++a
+    console.log('later a',a);
+
+}
+
+test(3)
