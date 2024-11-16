@@ -5,4 +5,5 @@ const person = {
 };
 
 const data = Reflect.ownKeys(person);
+
 console.log(data);
