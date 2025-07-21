@@ -21,3 +21,6 @@ function testStrict(){
 }
 
 console.log(testStrict());
+
+// the call method
+
