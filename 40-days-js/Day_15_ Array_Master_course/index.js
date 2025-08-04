@@ -1,3 +1,17 @@
-const myArr = new Array(1,3)
+const myArr = new Array(1, 3);
 
 console.log(myArr);
+
+const newArr = ["aa", "bb", "cc", "dd", "ee", "ff"];
+
+for (i = 0; i <= newArr.length-1; i++) {
+    console.log(newArr[i]);
+}
+
+
+newArr.push('gg')
+console.log(newArr);
+
+newArr.pop()
+
+console.log(newArr);
