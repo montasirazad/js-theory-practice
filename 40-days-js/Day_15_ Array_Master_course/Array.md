@@ -1,4 +1,4 @@
-# Basic Array Methods
+# Basic Array Methods 15
 
 Array length
 Array toString()
@@ -16,7 +16,7 @@ Array slice()
 Array splice()
 Array toSpliced()
 
-## Array Search Methods
+## Array Search Methods 7
 
 Array indexOf()
 Array lastIndexOf()
@@ -26,7 +26,7 @@ Array findIndex()
 Array findLast()
 Array findLastIndex()
 
-## Alphabetic Sort
+## Alphabetic Sort 5
 
 Array sort()
 Array reverse()
@@ -34,7 +34,7 @@ Array toSorted()
 Array toReversed()
 Sorting Objects
 
-## Numeric Sort
+## Numeric Sort 6
 
 Numeric Sort
 Random Sort
@@ -44,7 +44,7 @@ Home made Min()
 Home made Max()
 
 
-## Array Iteration Methods
+## Array Iteration Methods 16
 ### Array iteration methods operate on every array item.
 
 Array forEach
