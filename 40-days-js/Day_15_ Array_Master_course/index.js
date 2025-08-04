@@ -15,3 +15,10 @@ console.log(newArr);
 newArr.pop()
 
 console.log(newArr);
+
+newArr.shift()
+console.log(newArr);
+
+
+newArr.unshift('aa')
+console.log(newArr);
