@@ -1,6 +1,3 @@
-const fruits = ["apple", "banana", "orange"];
-console.log(fruits[fruits.length-1]);
+const myArr = new Array(1,3)
 
-
-const [apple]= ['apple','banana']
-console.log(apple);
+console.log(myArr);
