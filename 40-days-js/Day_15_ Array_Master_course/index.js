@@ -8,6 +8,7 @@ for (i = 0; i <= newArr.length-1; i++) {
     console.log(newArr[i]);
 }
 
+console.log(newArr.join('<-->'));
 
 newArr.push('gg')
 console.log(newArr);
