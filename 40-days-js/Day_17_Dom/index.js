@@ -1,3 +1,5 @@
 let titleElem = document.getElementById("heading");
 let paragraphElem = document.getElementsByClassName("line");
-console.log(paragraphElem);
+
+let para = document.querySelector('p.line')
+console.log(document.querySelectorAll('p.line'));
