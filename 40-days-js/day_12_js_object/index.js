@@ -48,8 +48,7 @@ const student = {
   },
 };
 
- 
-const myArr= Object.entries(student)
+const myArr = Object.entries(student);
 console.log(myArr);
 
 const { name, age, meal = "bread" } = student;
@@ -79,7 +78,7 @@ function sendEmail({ parents: { email } }) {
 }
 
 //sendEmail(student);
-//console.log("%cThis text is red and bold!", "color: red; font-weight: bold;");
+console.log("%cThis text is red and bold!", "color: red; font-weight: bold;");
 
 const getStudent = () => {
   return {
