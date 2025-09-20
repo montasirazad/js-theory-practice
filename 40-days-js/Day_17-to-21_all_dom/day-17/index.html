@@ -7,10 +7,27 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Day 17</h1>
-    <p>
+    <h1 id="h_1">Day 17</h1>
+    <p class="p_tag">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio,
       repellendus.
     </p>
+    <p class="p_tag">Lorem ipsum dolor sit amet.</p>
+    <p class="info">Lorem, ipsum dolor.</p>
+    <button onclick="highLightText()">Highlight</button>
+    <hr />
+    <input
+      type="text"
+      id="search"
+      placeholder="Search..."
+      onkeyup="filterList()"
+    />
+    <ul id="itemList">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+      <li>Grapes</li>
+      <li>Orange</li>
+    </ul>
   </body>
 </html>
