@@ -2,8 +2,6 @@ const inputElem = document.getElementById("taskInput");
 const ulElem = document.getElementById("taskList");
 const searchElem = document.getElementById("searchInput");
 
-console.log(ulElem);
-
 function addTask() {
   const inputValue = inputElem.value;
   if (inputValue == "") return;
@@ -27,20 +25,19 @@ function addTask() {
   });
 }
 
-searchElem.addEventListener("keyup", function (e) {
-  //   console.log(e.target.value);
-  const searchTerm = e.target.value;
-  const liElem = ulElem.children;
-
-  [...liElem].forEach((li) => {
-    li.style.backgroundColor = li.innerText
-      .trim()
+function searchText() {
+  const searchTerm = searchElem.value;
+  console.log(searchElem.value);
+  const liElem = document.querySelectorAll("ul#taskList li");
+  console.log(liElem);
+  liElem.forEach((li) => {
+    li.style.backgroundColor = li.textContent
       .toLowerCase()
       .includes(searchTerm.toLowerCase())
-      ? "orangered"
+      ? "yelloW"
       : "";
     //console.log(li.innerText.trim().toLowerCase());
   });
 
   console.log(liElem);
-});
+}
