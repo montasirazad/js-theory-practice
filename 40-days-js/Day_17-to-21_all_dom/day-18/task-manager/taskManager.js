@@ -1,6 +1,5 @@
 const inputElem = document.getElementById("taskInput");
 const ulElem = document.getElementById("taskList");
-const searchElem = document.getElementById("searchInput");
 
 function addTask() {
   const inputValue = inputElem.value;
@@ -8,10 +7,12 @@ function addTask() {
   const liElem = document.createElement("li");
   liElem.innerText = inputValue;
   const deleteBtn = document.createElement("button");
-  deleteBtn.innerText = "❌";
+  deleteBtn.innerText = "Delete";
+  //deleteBtn.innerText = "❌";
   liElem.append(deleteBtn);
   const completeBtn = document.createElement("button");
-  completeBtn.innerText = "✅";
+  completeBtn.innerText = "Complete";
+  //completeBtn.innerText = "✅";
   liElem.append(completeBtn);
   ulElem.append(liElem);
   inputElem.value = "";
@@ -26,18 +27,15 @@ function addTask() {
 }
 
 function searchText() {
+  const searchElem = document.getElementById("searchInput");
   const searchTerm = searchElem.value;
-  console.log(searchElem.value);
   const liElem = document.querySelectorAll("ul#taskList li");
-  console.log(liElem);
-  liElem.forEach((li) => {
-    li.style.backgroundColor = li.textContent
+  //console.log(liElem);
+  liElem.forEach((list) => {
+    list.style.display = list.innerText
       .toLowerCase()
       .includes(searchTerm.toLowerCase())
-      ? "yelloW"
-      : "";
-    //console.log(li.innerText.trim().toLowerCase());
+      ? "block"
+      : "none";
   });
-
-  console.log(liElem);
 }
