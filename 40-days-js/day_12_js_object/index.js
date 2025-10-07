@@ -1,3 +1,7 @@
+import { fruits, users } from './fake-data.js';
+
+console.log(users);
+console.log(fruits);
 let user = {
   name: "user_1",
   age: 40,
@@ -15,10 +19,10 @@ const someKey = "age";
 
 // constructor function
 
-function Car(name, model) {
-  this.name = name;
-  this.model = model;
-}
+// function Car(name, model) {
+//   this.name = name;
+//   this.model = model;
+// }
 
 // const bmwCar = new Car("BMW", "X!");
 // const audiCar = new Car("Audi", "M2");
