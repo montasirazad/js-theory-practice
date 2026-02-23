@@ -104,4 +104,12 @@ export const users = [
   },
 ];
 
-console.log(99);
+export const products = [
+  { name: "Laptop", category: "Electronics", price: 1200 },
+  { name: "Keyboard", category: "Electronics", price: 75 },
+  { name: "T-Shirt", category: "Apparel", price: 25 },
+  { name: "Mouse", category: "Electronics", price: 30 },
+  { name: "Jeans", category: "Apparel", price: 60 },
+  { name: "Jacket", category: "Apparel", price: 60 },
+];
+//console.log(99);
