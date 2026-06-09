@@ -20,6 +20,13 @@ const car = {
 };
 
 // console.log(car.details())
-car.id ='110011'
-console.log(car.id);
+// car.id ='110011'
+// console.log(car.id);
 // if value is assigned directly it is called literal syntax
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 20,
+  id: 1,
+};
