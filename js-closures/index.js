@@ -5,3 +5,4 @@ function myFunction() {
 
 const value = myFunction();
 console.log(value);
+console.dir(myFunction)
