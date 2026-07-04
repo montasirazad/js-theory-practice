@@ -7,7 +7,7 @@ let pElem = document.getElementsByClassName("p_tag");
   //console.log(elem);
 });
 //** selecting by tag name */
-//console.log(document.getElementsByTagName("p"));
+console.log(document.getElementsByTagName("p"));
 
 //selector -query selector
 let para = document.querySelector("p.info");
