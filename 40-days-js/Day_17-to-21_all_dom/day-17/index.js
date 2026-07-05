@@ -28,12 +28,11 @@ function filterList() {
   const searchInput = document.getElementById("search");
   const searchTerm = searchInput.value;
   const listItem = document.querySelectorAll("ul#itemList li");
- [...listItem].forEach((elem) => {
+  [...listItem].forEach((elem) => {
     elem.style.display = elem.innerText
       .toLowerCase()
       .includes(searchTerm.toLowerCase())
       ? "block"
       : "none";
-     
   });
 }
