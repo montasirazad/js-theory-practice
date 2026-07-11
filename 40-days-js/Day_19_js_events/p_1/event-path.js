@@ -17,3 +17,32 @@ childElem.addEventListener("click", function () {
 
 // Capturing
 
+grandParentElem.addEventListener(
+  "click",
+  function () {
+    console.log("Grand parent clicked");
+  },
+  true,
+);
+
+parentElem.addEventListener(
+  "click",
+  function () {
+    console.log("parent clicked");
+  },
+  true,
+);
+
+childElem.addEventListener(
+  "click",
+  function () {
+    console.log("child clicked");
+  },
+  true,
+);
+
+document.getElementById("itemList").addEventListener("click", (e) => {
+  if (e.target.tagName === "LI") {
+    console.log(`You clicked on ${e.target.textContent}`);
+  }
+});
