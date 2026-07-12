@@ -1,4 +1,10 @@
-const time = 2000;
+console.log("start"); // synch
+setTimeout(() => {
+  console.log("middle");
+}, 1500);
+console.log("end");
+
+// const time = 2000;
 // console.log("start");
 // setTimeout(() => {
 //   console.log(`Executing after ${time} sec`);
@@ -6,16 +12,16 @@ const time = 2000;
 
 // console.log("end");
 
-function greet(name, callback) {
-  console.log(`Hi ${name}`);
-  setTimeout(() => {
-    callback();
-  }, time);
-  console.log("i am still hanging here ");
-}
+// function greet(name, callback) {
+//   console.log(`Hi ${name}`);
+//   setTimeout(() => {
+//     callback();
+//   }, time);
+//   console.log("i am still hanging here ");
+// }
 
-function sayBye() {
-  console.log("bye");
-}
+// function sayBye() {
+//   console.log("bye");
+// }
 
-greet("john", sayBye);
+// greet("john", sayBye);
