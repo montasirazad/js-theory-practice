@@ -4,10 +4,10 @@ function Person(name, age, lastName) {
 }
 
 const person_1 = new Person("john", 10, "doe");
-console.log(person_1["last name"]);
-console.log(Object.values(person_1));
-console.log(Object.entries(person_1));
-console.log(JSON.stringify(person_1));
+// console.log(person_1["last name"]);
+// console.log(Object.values(person_1));
+// console.log(Object.entries(person_1));
+// console.log(JSON.stringify(person_1));
 
 const fruits = [
   { name: "apples", quantity: 300 },
@@ -116,7 +116,7 @@ function myCallback({ quantity }) {
 
 // Group by Quantity
 const result = Object.groupBy(fruits, myCallback);
-console.log(result);
+// console.log(result);
 
 const inventoryResult = Object.groupBy(inventory, ({ category }) => {
   if (category.toLocaleLowerCase() === "Electronics".toLocaleLowerCase()) {
@@ -126,4 +126,4 @@ const inventoryResult = Object.groupBy(inventory, ({ category }) => {
   }
 });
 
-console.log(inventoryResult);
+// console.log(inventoryResult);

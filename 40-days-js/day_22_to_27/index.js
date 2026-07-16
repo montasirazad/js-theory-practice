@@ -1,8 +1,8 @@
-console.log("start"); // synch
-setTimeout(() => {
-  console.log("middle");
-}, 1500);
-console.log("end");
+// console.log("start"); // synch
+// setTimeout(() => {
+//   console.log("middle");
+// }, 1500);
+// console.log("end");
 
 // const time = 2000;
 // console.log("start");
