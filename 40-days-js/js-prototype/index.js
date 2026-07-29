@@ -1,3 +1,17 @@
+class Food {
+  constructor(name, price) {
+    this.name = name;
+    this.price = price;
+  }
+  details() {
+    console.log(`Name: ${this.name} -- Price: ${this.price}`);
+  }
+}
+
+const pasta = new Food("pasta", 300);
+console.log(pasta);
+pasta.details();
+
 // let person = {};
 // person.name = "A";
 // person.age = 10;
