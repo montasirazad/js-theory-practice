@@ -16,7 +16,7 @@ body {
 
 .quiz-box {
   background-color: #2a2a40;
-  padding: 3px;
+  padding: 10px;
   border-radius: 16px;
   width: 90%;
   max-width: 500px;
@@ -55,4 +55,11 @@ body {
 
 .option-btn:hover {
   background: #4b4b7e;
+}
+.option-btn.correct {
+  background-color: green;
+}
+
+.option-btn.wrong {
+  background-color: red;
 }

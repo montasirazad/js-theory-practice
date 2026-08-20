@@ -29,7 +29,7 @@ const quizData = [
 const questionEl = document.getElementById("question");
 const timerEl = document.getElementById("timer");
 const optionEL = document.getElementById("option");
-const btnEl = document.getElementById("next-btn");
+const nextBtn = document.getElementById("next-btn");
 const resultEl = document.getElementById("result");
 
 let questions = [...quizData].sort(() => Math.random - 0.5);
@@ -37,12 +37,33 @@ let currentQuestion = 0;
 function loadQuestion() {
   const q = questions[currentQuestion];
   questionEl.textContent = `Q ${currentQuestion + 1}: ${q.question}`;
+  optionEL.innerHTML = "";
   q.options.forEach((option, index) => {
     const btn = document.createElement("button");
     btn.classList.add("option-btn");
     btn.textContent = option;
+    btn.addEventListener("click", () => selectAnswer(index));
     optionEL.appendChild(btn);
   });
+  nextBtn.style.display = "none";
+}
+function selectAnswer(index) {
+  const q = questions[currentQuestion];
+  const buttons = document.querySelectorAll(".option-btn ");
+  buttons.forEach((btn) => btn.disabled === true);
+  if (index === q.correct) {
+    buttons[index].classList.add("correct");
+  } else {
+    buttons[index].classList.add("wrong");
+    buttons[q.correct].classList.add("correct");
+  }
+  nextBtn.style.display = "inline-block";
 }
 
+nextBtn.addEventListener("click", () => {
+  currentQuestion++;
+  if (currentQuestion < questions.length) {
+    loadQuestion();
+  }
+});
 loadQuestion();
