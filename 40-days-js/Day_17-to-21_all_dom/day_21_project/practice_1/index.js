@@ -89,10 +89,10 @@ nextBtn.addEventListener("click", () => {
   if (currentQuestion < questions.length) {
     loadQuestion();
   } else {
-    showResult();
+    selectAnswer();
   }
 });
-function showResult() {
+function selectAnswer() {
   nextBtn.style.display = "none";
   const highScore = localStorage.getItem("quizHighScore") || 0;
   const isNew = score > highScore;
