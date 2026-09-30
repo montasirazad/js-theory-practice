@@ -2,11 +2,14 @@
 function Car(name, model) {
   this.name = name;
   this.model = model;
+  this.func = function () {
+    console.log(`Name: ${this.name} ---Model: ${this.model}`);
+  };
 }
 
 const bmwCar = new Car("bmw", "x1");
 const audiCar = new Car("audi", "a8");
-// console.log(bmwCar);
+console.log(bmwCar.func());
 // console.log(audiCar instanceof Car);
 
 const person = new Object();
@@ -45,7 +48,7 @@ let profile = {
     },
   },
 };
-const myArr = Object.entries(profile)
+const myArr = Object.entries(profile);
 console.log(myArr);
 // in operator
 
